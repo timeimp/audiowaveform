@@ -70,6 +70,8 @@ jobs:
         tar xzf libid3tag-0.15.1b.tar.gz
         cd libid3tag-0.15.1b
         ./configure --enable-static
+        grep -w CC Makefile
+        grep -w CPP Makefile
         make
         make install
 
